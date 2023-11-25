@@ -1,0 +1,32 @@
+.navStatic {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconNav {
+  width: 1.7rem;
+  height: 100%;
+  padding-left: 5px;
+  display: flex;
+}
+
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+.animated-emoji {
+  font-size: 15em;
+  animation: pulseAnimation 2s infinite;
+}
